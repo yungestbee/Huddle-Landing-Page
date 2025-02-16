@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins";
+  }
+
+  button {
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: 700;
+    border: none;
+  }
+  .section-one {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding: 20px 5%;
+    height: 100vh;
+  }
+
+  .section-one .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 65px 0;
+  }
+
+  .section-one .nav img {
+    width: 12rem;
+  }
+
+  .section-one .nav button {
+    width: 180px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+  }
+  .mid {
+    display: flex;
+    width: 100%;
+  }
+
+  .mid .text {
+    width: 50%;
+    position: relative;
+    top: 90px;
+  }
+
+  .mid .text h2 {
+    font-size: 3rem;
+    width: 95%;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  .mid .text p {
+    font-size: 1.2rem;
+    width: 82%;
+    margin-bottom: 25px;
+  }
+
+  .mid .text button {
+    width: 42%;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(243, 146, 238, 0.108);
+    padding: 18px;
+  }
+  .mid .picture {
+    width: 50%;
+  }
+
+  .mid .picture img {
+    width: 100%;
+  }
+
+  .section-two {
+    background-color: #fff;
+    padding: 20px 5%;
+  }
+
+  .section-two .card {
+    display: flex;
+    padding: 40px 20px 40px 100px;
+    height: 30rem;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+    border-radius: 25px;
+  }
+
+  .section-two .card .text {
+    width: 41%;
+    align-self: center;
+    color: hsl(208, 11%, 55%);
+  }
+
+  .section-two .card .text h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
+  .section-two .card .text p {
+    font-size: 1.1rem;
+  }
+
+  .section-two .card .picture {
+    width: 50%;
+  }
+
+  .section-two .card .picture img {
+    width: 80%;
+    float: right;
+  }
+
+  #second {
+    float: left;
+  }
+
+  .split-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+    text-align: center;
+    border-radius: 25px;
+    width: 60%;
+    padding: 70px;
+    position: relative;
+    left: 20%;
+    bottom: -100px;
+  }
+  .split-card h2 {
+    font-size: 2rem;
+  }
+  .split-card button {
+    width: 60%;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 5px 1px rgba(243, 146, 238, 0.108);
+    color: #fff;
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 35px;
+    border-radius: 38px;
+  }
+
+  .section-three {
+    background-color: hsl(192, 100%, 9%);
+    padding: 15% 5% 10px 5%;
+    color: #fff;
+    height: 50%;
+  }
+
+  .section-three .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-three .footer div {
+    max-width: 27rem;
+    margin-bottom: 20px;
+  }
+
+  .section-three .footer div li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .last {
+    float: right;
+  }
+
+  .mail {
+    display: flex;
+  }
+  .mail img {
+    margin-right: 25px;
+    align-self: center;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
