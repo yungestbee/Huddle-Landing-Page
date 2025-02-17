@@ -7,9 +7,9 @@
   font-family: "Open Sans";
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   h1,
@@ -25,6 +25,7 @@
     padding: 15px;
     font-weight: 700;
     border: none;
+    cursor: pointer;
   }
   .section-one {
     background-image: url("images/bg-hero-desktop.svg");
@@ -49,6 +50,11 @@
     background-color: #fff;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
   }
+
+  .section-one .nav button:hover {
+    color: hsl(208, 11%, 55%);
+  }
+
   .mid {
     display: flex;
     width: 100%;
@@ -61,14 +67,14 @@
   }
 
   .mid .text h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     width: 95%;
     margin-bottom: 25px;
     font-weight: 600;
   }
   .mid .text p {
-    font-size: 1.2rem;
-    width: 82%;
+    font-size: 1.1rem;
+    width: 94%;
     margin-bottom: 25px;
   }
 
@@ -78,6 +84,10 @@
     color: #fff;
     box-shadow: 0px 0px 5px 1px rgba(243, 146, 238, 0.108);
     padding: 18px;
+  }
+
+  .mid .text button:hover {
+    background-color: hsla(322, 100%, 75%, 0.915);
   }
   .mid .picture {
     width: 50%;
@@ -89,17 +99,18 @@
 
   .section-two {
     background-color: #fff;
-    padding: 20px 5%;
+    padding: 40px 5% 20px 5%;
   }
 
   .section-two .card {
     display: flex;
     padding: 40px 20px 40px 100px;
-    height: 30rem;
+    height: 28rem;
     margin-bottom: 50px;
     justify-content: space-between;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
     border-radius: 25px;
+    align-items: center;
   }
 
   .section-two .card .text {
@@ -144,7 +155,7 @@
     bottom: -100px;
   }
   .split-card h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .split-card button {
     width: 60%;
@@ -155,6 +166,10 @@
     padding: 25px;
     margin-top: 35px;
     border-radius: 38px;
+  }
+
+  .split-card button:hover {
+    background-color: hsla(322, 100%, 75%, 0.915);
   }
 
   .section-three {
@@ -179,8 +194,230 @@
     margin-bottom: 20px;
   }
 
+  .section-three .footer div li a{
+    color: #fff;
+    text-decoration: none;
+  }
+
   .last {
     float: right;
+  }
+
+  .mail {
+    display: flex;
+  }
+  .mail img {
+    margin-right: 25px;
+    align-self: center;
+  }
+
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins";
+  }
+
+  button {
+    border-radius: 25px;
+    padding: 8px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+  .section-one {
+    background-image: url("images/bg-hero-mobile.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding: 20px 5%;
+    /* height: 100vh; */
+  }
+
+  .section-one .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 65px 0;
+  }
+
+  .section-one .nav img {
+    width: 8rem;
+  }
+
+  .section-one .nav button {
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+  }
+
+  .section-one .nav button:hover {
+    color: hsl(208, 11%, 55%);
+  }
+
+  .mid {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mid .text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .mid .text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  .mid .text p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .mid .text button {
+    width: 80%;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(243, 146, 238, 0.108);
+    padding: 18px;
+  }
+
+  .mid .text button:hover {
+    background-color: hsla(322, 100%, 75%, 0.915);
+  }
+  .mid .picture {
+    width: 100%;
+  }
+
+  .mid .picture img {
+    width: 100%;
+  }
+
+  .section-two {
+    background-color: #fff;
+    padding: 70px 5% 20px 5%;
+  }
+
+  .section-two .card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 40px;
+    height: 28rem;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  #second-card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 27rem;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .section-two .card .text {
+    color: hsl(208, 11%, 55%);
+  }
+
+  .section-two .card .text h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .section-two .card .text p {
+    font-size: 0.8rem;
+  }
+
+  .section-two .card .picture {
+    width: 100%;
+  }
+
+  .section-two .card .picture img {
+    width: 100%;
+  }
+
+  .split-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.108);
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+    padding: 40px 10px;
+    position: relative;
+    bottom: -70px;
+  }
+  .split-card h2 {
+    font-size: 1.1rem;
+  }
+  .split-card button {
+    width: 60%;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 5px 1px rgba(243, 146, 238, 0.108);
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 38px;
+  }
+
+  .split-card button:hover {
+    background-color: hsla(322, 100%, 75%, 0.915);
+  }
+
+  .section-three {
+    background-color: hsl(192, 100%, 9%);
+    padding: 25% 5% 10px 5%;
+    color: #fff;
+    height: 50%;
+  }
+
+  .section-three .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section-three .footer div {
+    max-width: 27rem;
+    margin-bottom: 20px;
+  }
+
+  .section-three .footer div li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .section-three .footer div li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .last {
+    text-align: center;
   }
 
   .mail {
